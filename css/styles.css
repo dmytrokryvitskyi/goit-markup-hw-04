@@ -117,15 +117,25 @@ img {
 /*Стилізвція контактів в хедері (пошта, тел)*/
 .contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
-.itm {
+.itm{
+  display: flex;
+  text-align: center;
+  justify-content: center;
   margin-right: 50px;
+  
 }
 
 .itm:last-child {
   margin-right: 0px;
+}
+
+.contacts-icon{
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .mail-phone {
@@ -137,13 +147,16 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.mail-phone:hover,
-.mail-phone:focus {
+.mail-phone:hover{
   color: var(--highlight-color);
 }
-
 /*Стилізвція основної частини (Секцій)*/
 
 /*Стилізвція Герой */
