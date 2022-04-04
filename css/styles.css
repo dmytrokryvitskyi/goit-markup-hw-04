@@ -423,7 +423,8 @@ margin-top: 16px;
   justify-content: center;
   align-items: center;
   width: 170px;
-  height: 92px; 
+  height: 92px;
+  border: 1px solid #AFB1B8;
 }
 
 
@@ -431,12 +432,14 @@ margin-top: 16px;
   fill: #AFB1B8 ;
 }
 
-.clients-icon:hover,
-.clients-icon:focus{
-  fill: var(--highlight-color);
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--highlight-color);
 }
 
-
+.clients-link:hover .clients-icon {
+  fill: var(--highlight-color);
+}
 
 
 
