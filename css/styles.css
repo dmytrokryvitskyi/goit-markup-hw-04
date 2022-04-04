@@ -330,24 +330,53 @@ img {
   margin-right: auto;
 }
 
+/*Стилізвція SOCIALS (Instagram. Twitter, etc.)*/
+
 .socials{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.socials-link{
-width: 10px;
-height: 10px;
-border-radius: 50%;
-background-color: var(--white-color); 
+.socials-item{
+
+margin-right: 10px;
+margin-top: 16px;
+}
+
+.socials-item:last-child {
+  margin-right: 0px;
+  }
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: var(--white-color);
+} 
+
+.socials-link:hover,
+.socials-link:focus{
+  background-color: var(--highlight-color);
 }
 
 .socials-icon{
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
-  fill: #2196f3;
+  fill: #AFB1B8;
 }
+
+.socials-icon:hover,
+.socials-icon:focus{
+  fill: var(--white-color);
+}
+
+.socials-link:hover .socials-icon{
+  fill: var(--white-color);
+}
+
 
 /*Стилізвція ФУТЕРА */
 .page-footer {
