@@ -365,7 +365,7 @@ margin-top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-    width: 44px;
+  width: 44px;
   height: 44px;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -391,8 +391,68 @@ margin-top: 16px;
 }
 
 
+/*Стилізвція Постоянные клиенты */
+
+
+.clients-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+.clients-item{
+  margin-right: 30px;
+}
+
+.clients-item:last-child {
+  margin-right: 0px;
+}
+
+.clients-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px; 
+}
+
+
+.clients-icon{
+  fill: #AFB1B8 ;
+}
+
+.clients-icon:hover,
+.clients-icon:focus{
+  fill: var(--highlight-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Стилізвція ФУТЕРА */
-.page-footer {
+
+
+.page-footer{
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
