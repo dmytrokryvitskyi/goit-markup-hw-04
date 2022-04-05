@@ -590,6 +590,7 @@ margin-top: 16px;
 .button-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -601,24 +602,28 @@ margin-top: 16px;
 }
 
 .button {
-  display: inline-block;
+   display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-height: 38px;
+
   background-color: #f5f4fa;
   color: var(--main-black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-height: 38px;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--highlight-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
@@ -642,6 +647,17 @@ margin-top: 16px;
   margin-bottom: 0px;
 }
 
+.examples-item-link {
+  display: block;
+  text-decoration: none;
+}
+
+.examples-item-link:hover,
+.examples-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .example-img {
   width: 370px;
 }
@@ -659,6 +675,8 @@ margin-top: 16px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 
 .for-borders {
