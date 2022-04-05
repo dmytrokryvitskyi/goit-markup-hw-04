@@ -457,115 +457,114 @@ margin-top: 16px;
   fill: var(--highlight-color);
 }
 
-/*Стилізвція ФУТЕРА */
+/*СТИЛІЗАЦІЯ ФУТЕРА */
 
-
-.page-footer{
-  background-color: #2f303a;
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  display: flex;
-  justify-content: space-around;
+  background-color: #2f303a;
 }
 
-.footer-logo {
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+/*  ЛОГОТИП */
+
+.footer-logo-web {
   display: inline-block;
-  color: var(--white-color);
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-top: 0px;
   margin-bottom: 20px;
 }
 
-.conact-item {
-  margin-bottom: 9px;
-}
-.footer-contact-item {
-  margin-bottom: 9px;
-}
-
-.footer-contact-item:last-child {
-  margin-bottom: 0px;
-}
-
-.contact-address {
+.footer-logo-web,
+.footer-logo-studio {
+  font-family: Raleway, sans-serif;
   font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+
+.footer-logo-studio {
+  color: var(--white-color);
+}
+
+/* АДРЕСА І КОНТАКТИ */
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-item-map,
+.footer-item-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--white-color);
   text-decoration: none;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 9px;
 }
 
-.contact-address:hover,
-.contact-address:focus {
+.footer-item-map:hover,
+.footer-item-map:focus{
   color: var(--highlight-color);
 }
 
-.contact-content {
-  font-style: normal;
+.footer-item-contact {
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
-.contact-content:hover,
-.contact-content:focus {
+.footer-item-contact:hover,
+.footer-item-contact:focus {
   color: var(--highlight-color);
 }
 
-/* Стилізація СОЦІАЛьНІ МЕРЕЖІ ФУТЕР */
-.socials-footer-watchword{
+/* ПРИСОЕДИНЯЙТЕСЬ */
+
+.footer-join-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 10px;
+
+  margin-bottom: 20px;
 }
 
-
-.socials-footer{
+.footer-join-list{
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.socials-item-footer{
+.footer-list-item:not(:last-child) {
   margin-right: 10px;
-  margin-top: 20px;
 }
 
-.socials-item-footer:last-child {
-  margin-right: 0px;
-}
-
-.socials-link-footer {
+.footer-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.1);;
 }
 
-.socials-link-footer:hover,
-.socials-link-footer:focus {
+.footer-item-link:hover,
+.ftr-item-link:focus {
   background-color: var(--highlight-color);
 }
 
-.socials-icon-footer {
+.footer-link-icon {
   fill: var(--white-color);
 }
 
