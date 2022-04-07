@@ -154,7 +154,8 @@ img {
   align-items: center;
 }
 
-.mail-phone:hover{
+.mail-phone:hover,
+.mail-phone:focus {
   color: var(--highlight-color);
 }
 /*Стилізвція основної частини (Секцій)*/
@@ -241,6 +242,7 @@ img {
 display: block;
 justify-content: center;
 align-items: center;
+margin-right: 30px;
 }
 
 .advantages-item:last-child {
@@ -252,7 +254,6 @@ align-items: center;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 279px;
   height: 120px;
   background-color:#F5F4FA;
   border-radius: 4px;
@@ -372,12 +373,12 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
 }
 
 .socials-item{
 
 margin-right: 10px;
-margin-top: 16px;
 }
 
 .socials-item:last-child {
@@ -413,6 +414,9 @@ margin-top: 16px;
   fill: var(--white-color);
 }
 
+.socials-link:focus .socials-icon {
+  fill: var(--white-color);
+  }
 
 /*Стилізвція Постоянные клиенты */
 
@@ -448,6 +452,7 @@ margin-top: 16px;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
+  border-radius: 4px;
 }
 
 .clients-icon{
@@ -462,6 +467,11 @@ margin-top: 16px;
 .clients-link:hover .clients-icon {
   fill: var(--highlight-color);
 }
+
+.clients-link:focus .clients-icon {
+  fill: var(--highlight-color);
+}
+
 
 /*СТИЛІЗАЦІЯ ФУТЕРА */
 
@@ -564,9 +574,9 @@ margin-top: 16px;
   width: 44px;
   height: 44px;
 }
-
+              
 .footer-item-link:hover,
-.ftr-item-link:focus {
+.footer-item-link:focus {
   background-color: var(--highlight-color);
 }
 
